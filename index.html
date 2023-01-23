@@ -15,6 +15,7 @@
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -119,7 +120,7 @@
 
   <h1 class="section-heading" id="about-section"><span class="section-text">about me</span></h1>
   
-  <div class="about-container">
+  <div data-aos="fade-up" data-aos-duration="1500" class="about-container">
     <div class="about-left">
       <p class="about-headline">committed to creating</p>
       <p class="about-bio">
@@ -128,7 +129,7 @@
 		  Highly motivated and hardworking problem solver. Passionate about developing effective relationships with others and creating a positive impact on the world around me. Strengths in meeting commitments, producing results, and free-thinking creativity. Self-driven and motivated. A lifelong learner. 
       </p>
     </div>
-    <div class="about-right">
+    <div data-aos="fade-up" data-aos-duration="1500" class="about-right">
       <p class="skills-headline">my skills</p>
       <div class="skills-list">
         <div class="skill">Python</div>
@@ -157,7 +158,7 @@
   
   <h1 class="section-heading" id="projects-section"><span class="section-text">projects</span></h1>
 	
-<div class="all-projects" ;> 
+<div data-aos="fade-up" data-aos-duration="1500" class="all-projects" > 
  <div class="timeline">
   <div class="project-container right">
     <div class="desc">
@@ -236,7 +237,7 @@
 </div>
   
   <h1 class="section-heading" id="contact-section"><span class="section-text">contact</span></h1>
-  <div class="contact-container">
+  <div data-aos="fade-up" data-aos-duration="1500" class="contact-container">
     <div class="contact-left">
       <p class="contact-left-text">let's get in<br>touch!</p>
       <div class="contact-left-flex">
@@ -262,7 +263,7 @@
       
     </div>
     <div id="f" class="footer-sig">
-      <p id="test">built and designed with &#10084; by kaleb</p>
+      <a style="text-decoration: underline;color: black;" href="https://github.com/kalebrigg/portfolioWebsite-main"><p id="test">built and designed with &#10084; by kaleb</p></a>
     </div>
     
   </div>
@@ -270,9 +271,10 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-	
-<script> 
-	
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
 	console.log("START TEST");
 	let test = document.getElementById("test");
 	test.addEventListener("click", function()
@@ -419,5 +421,6 @@
 	})
 
 </script>
+
 
 </html>
