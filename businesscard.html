@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Kaleb Rigg Contact Info" />
+  <meta charset="utf-8">
+  <title>Kaleb Rigg Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <link rel="icon" href="https://kalebrigg-bucket.s3.us-west-1.amazonaws.com/icon+logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+  
+    <div class="container">
+        <!-- <img class="background" src="https://kalebrigg-bucket.s3.us-west-1.amazonaws.com/Kaleb+Rigg+-+Digital+Business+Card-ROT.png" alt=""> -->
+        <div class="content-container">
+            
+            <img class="header" src="https://kalebrigg-bucket.s3.us-west-1.amazonaws.com/name+logo+(1).png" alt="">
+            
+            <div style="margin-bottom:5%;">
+                <a class="icon" href="tel:575-574-7608">
+                    <i class="fa fa-phone" aria-hidden="true"> </i>
+                    <span class="white-span">575.574.7608</span>
+                </a>
+            </div>
+            <div style="margin-bottom:5%;" class="tooltip" >
+                <span class="tooltiptext" id="copied">Copied To Clipboard</span>
+
+                <a class="icon" href="#" onclick="copyFunc()">
+                    <i class="fa fa-envelope" aria-hidden="true"> </i>
+                    <span class="white-span">kaleb2323rigg@gmail.com</span>
+                </a>
+            </div>
+            <div style="margin-bottom:5%;">
+                <a class="icon" href="https://kalebrigg-bucket.s3.us-west-1.amazonaws.com/KalebRiggResume.pdf">
+                    <i class="fa fa-download" aria-hidden="true"> </i>
+                    <span class="white-span">View Resume</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- <div class="modalBackground" id="mBack" onclick="clickOff()">
+            <div class="modalContent" id="mBackContent">
+                <span class="tooltiptext">Copied to clipboard!</span>
+            </div>
+        </div> -->
+
+        <div class="logo">
+            <img src="https://kalebrigg-bucket.s3.us-west-1.amazonaws.com/Logo+(2).png" alt="">
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        margin: 0;
+        padding:0;
+    }
+
+    .white-span {
+        color:white; 
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        font-size: 1.3rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        width: 200px;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -100px;
+    }
+
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -8px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+    }
+
+
+
+
+    /* .background {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        object-fit: contain;
+        background-size: 100%;
+    } */
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url("https://kalebrigg-bucket.s3.us-west-1.amazonaws.com/jon-r8AFUpRp0J0-unsplash+(2).jpg");
+        background-size: cover;
+    }
+
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        width: 100%;
+        align-content: center;
+        margin-top: 10%;
+    }
+
+    .icon {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 15%;
+        background: rgb(0,0,0,.1);
+        padding: 5px;
+        padding-right: 8px;
+        border-radius: 8px;
+    }
+
+    .icon i {
+        margin:10px;
+    }
+
+    .logo {
+        max-height: 15%;
+        max-width: 15%;
+        position:absolute;
+        top: 88%;
+        left:80%;
+    }
+
+    .logo img {
+        height:100%;
+        width: 100%;
+    }
+
+    
+
+    @media only screen and (max-width: 400px) {
+        
+        .tooltip .tooltiptext,
+        .icon {
+            font-size: 1.0rem;
+        }
+        
+
+    }
+
+    @media only screen and (min-width: 700px) {
+
+        .tooltip .tooltiptext,
+        .icon {
+            font-size: 1.8rem;
+        }
+
+        .logo {
+            top: 86%;
+            left:80%;
+        }
+
+    }
+
+    @media only screen and (min-width: 1000px) {
+
+        .tooltip .tooltiptext,
+        .icon {
+        font-size: 2.2rem;
+        }
+
+        .logo {
+            top: 86%;
+            left:80%;
+        }
+
+
+    }
+
+
+</style>
+
+<script src="https://use.fontawesome.com/09fc1bba0c.js"></script>
+
+<script>
+
+    function copyFunc() {
+        console.log("CLICKED");
+        var copyText = "kaleb2323rigg@gmail.com";
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText);
+        console.log(copyText);
+
+        setTimeout(function(){
+            document.getElementById("copied").style.visibility = 'visible';
+        },  100);
+        setTimeout(function(){
+            document.getElementById("copied").style.visibility = 'hidden';
+        },  2000);
+    }
+
+  
+
+
+</script>
+</html>
